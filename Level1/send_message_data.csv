@@ -1,0 +1,10 @@
+test_id,recipient_id,message,length,expected,expected_length
+TC-002-001,4,,0,,0
+TC-002-002,4,a,0,a,0
+TC-002-003,3,hi,0,hi,0
+TC-002-004,3,,4096,,4096
+TC-002-005,3,,4097,,4096
+TC-002-006,3,"Hello, how are you?",0,"Hello, how are you?",0
+TC-002-007,3,"Hello! @#$%^&*() — 123",0,"Hello! @#$%^&*() — 123",0
+TC-002-008,3,"Hi there! 😊🎉",0,"Hi there! 😊🎉",0
+TC-002-011,3,,10000,,4096
